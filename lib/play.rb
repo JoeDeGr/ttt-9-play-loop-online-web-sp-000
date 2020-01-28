@@ -41,7 +41,7 @@ def play(board)
   counter =0
   while
     counter +=1
-    if counter>=8
+    if counter>=9
       break
     else
       turn(board)
