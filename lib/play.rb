@@ -42,7 +42,7 @@ def play(board)
   while
     counter +=1
     if counter>=8
-      break    
+      break
     else
       turn(board)
     end
