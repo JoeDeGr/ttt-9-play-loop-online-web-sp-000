@@ -42,7 +42,7 @@ def play(board)
     counter +=1
     if counter>=8
       break
-    elsif board == (((board[0] && board[4] && board[8]) == “X”)|| ((board[0] && board[4] && board[8]) == ”O”)) ||
+    elsif board == (board[0] == board[4] == board[8]) || (board[0] == board[4] == board[8]) == ”O”)) ||
       (((board[2] && board[4] && board[6]) == “X”) || ((board[2] && board[4] && board[6]) == “O”)) ||
       (((board[0] && board[1] && board[2]) == “X”) || ((board[0] && board[1] && board[2]) == “O”)) ||
       (((board[3] && board[4] && board[5]) == “X”) || ((board[3] && board[4] && board[5]) == ”O”)) ||
