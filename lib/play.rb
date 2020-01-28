@@ -36,3 +36,23 @@ def turn(board)
 end
 
 # Define your play method below
+def play(board)
+counter =0
+while 
+  counter +=1
+  if counter>=9
+    break
+  elsif board == (((board[0] && board[4] && board[8]) == “X”)|| ((board[0] && board[4] && board[8]) == ”O”)) || 
+    (((board[2] && board[4] && board[6]) == “X”) || ((board[2] && board[4] && board[6]) == “O”)) ||
+    (((board[0] && board[1] && board[2]) == “X”) || ((board[0] && board[1] && board[2]) == “O”)) ||
+    (((board[3] && board[4] && board[5]) == “X”) || ((board[3] && board[4] && board[5]) == ”O”)) ||
+    (((board[6] && board[7] && board[8]) == “X”) || ((board[6] && board[7] && board[8]) == “O”)) ||
+    (((board[0] && board[3] && board[6]) == “X”) || ((board[0] && board[3] && board[6]) == “O”)) || 
+    (((board[1] && board[4] && board[7]) == “X”) || ((board[1] && board[4] && board[7]) == ”O”)) || 
+    (((board[2] && board[5] && board[8]) == “X”) || ((board[2] && board[5] && board[8]) == “O”))
+
+    break
+  else 
+    turn(board)
+  end
+end
