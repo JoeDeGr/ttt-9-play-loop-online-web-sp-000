@@ -43,9 +43,14 @@ def play(board)
     counter +=1
     if counter>=8
       break
-    elsif (board[0] == board[4] && board[4] == board[8]) == “X” || “O”) || (board[2] == board[4] && board[4] == board[6]) == “X” || “O”)|| (board[0] == board[1] && board[1] == board[2]) == “X” || “O”) ||(board[3] == board[4] && board[4] == board[5]) == “X” || “O”)|| (board[6] == board[7] && board[7] == board[8]) == “X” || “O”)|| (board[0] == board[3] && board[3] == board[6]) == “X” || “O”) || (board[1] == board[4] && board[4] == board[7]) == “X” || “O”)|| (board[2] == board[5] && board[5] == board[8]) == “X” || “O”)break
-elsif || (board[0] == board[1] && board[1] == board[2]) == “X” || “O”) ||(board[3] == board[4] && board[4] == board[5]) == “X” || “O”)|| (board[6] == board[7] && board[7] == board[8]) == “X” || “O”)|| (board[0] == board[3] && board[3] == board[6]) == “X” || “O”) || (board[1] == board[4] && board[4] == board[7]) == “X” || “O”)|| (board[2] == board[5] && board[5] == board[8]) == “X” || “O”)
-    break
+    elsif (board[0] == board[4] && board[4] == board[8]) == “X” || “O”) || (board[2] == board[4] && board[4] == board[6]) == “X” || “O”) 
+      break
+    elsif (board[0] == board[1] && board[1] == board[2]) == “X” || “O”) ||(board[3] == board[4] && board[4] == board[5]) == “X” || “O”)
+      break
+    elsif (board[6] == board[7] && board[7] == board[8]) == “X” || “O”)|| (board[0] == board[3] && board[3] == board[6]) == “X” || “O”) 
+      break
+    elsif (board[1] == board[4] && board[4] == board[7]) == “X” || “O”)|| (board[2] == board[5] && board[5] == board[8]) == “X” || “O”)
+      break
     else
       turn(board)
     end
